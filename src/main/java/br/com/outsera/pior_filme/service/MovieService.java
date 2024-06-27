@@ -56,7 +56,9 @@ public class MovieService {
 
     private static void getProducers(List<Movie> winnerMovies, Map<String, List<Integer>> producerWins) {
         for (Movie movie : winnerMovies) {
-            String[] producers = movie.getProducers().split(",\\s*");
+            String producersString = movie.getProducers();
+            producersString = producersString.replaceAll("\\s+and\\s+", ", ");
+            String[] producers = producersString.split(",\\s*");
             for (String producer : producers) {
                 producerWins.computeIfAbsent(producer, k -> new ArrayList<>()).add(movie.getMovieYear());
             }
