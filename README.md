@@ -12,7 +12,7 @@ Este é um projeto Spring Boot que processa dados de filmes vencedores e calcula
 ### Clonando o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/pior-filme.git
+git clone https://github.com/GuilhermeLana/pior-filme.git
 cd pior-filme
 ```
 
