@@ -20,7 +20,7 @@ public class MovieService {
     @Autowired
     private MovieRepository movieRepository;
 
-    public ProducersIntervalRequestDTO getProducerWithLongestInterval() {
+    public ProducersIntervalRequestDTO getProducersInterval() {
         List<Movie> winnerMovies = getWinnerMovies();
 
         Map<String, List<Integer>> producerWins = new HashMap<>();

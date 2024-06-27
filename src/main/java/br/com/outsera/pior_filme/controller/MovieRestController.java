@@ -16,7 +16,7 @@ public class MovieRestController {
 
     @GetMapping("/producers-interval")
     public ProducersIntervalRequestDTO getProducersInterval(){
-        return movieService.getProducerWithLongestInterval();
+        return movieService.getProducersInterval();
     }
 
 }
